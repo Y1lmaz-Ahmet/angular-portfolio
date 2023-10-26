@@ -2,94 +2,15 @@
     <div class="heading">My <span>Projects</span></div>
 
     <div class="box-container">
-        <div class="box">
-            <img src="images/gallery1.jpg" alt>
-            <h3 class="title">Project - 1</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
+        <div class="box" *ngFor="let item of galleryItems">
+          <img [src]="item.imageSrc" alt="">
+          <h3 class="title">{{ item.title }}</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a [href]="item.githubLink" title="github" target="_blank" class="fas fa-share"></a>
+            <a [href]="item.livePreviewLink" title="live preview" target="_blank" class="fas fa-eye"></a>
+          </div>
         </div>
-
-        <div class="box">
-            <img src="images/gallery2.jpg" alt>
-            <h3 class="title">project - 2</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery3.jpg" alt>
-            <h3 class="title">project - 3</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery4.jpg" alt>
-            <h3 class="title">project - 4</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery5.jpg" alt>
-            <h3 class="title">project - 5</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery6.jpg" alt>
-            <h3 class="title">project - 6</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery7.jpg" alt>
-            <h3 class="title">project - 7</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery8.jpg" alt>
-            <h3 class="title">project - 8</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/gallery9.jpg" alt>
-            <h3 class="title">project - 9</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-    </div>
+      </div>
+      
 </section>
