@@ -1,0 +1,14 @@
+<section class="service" id="service">
+    <h1 class="heading">
+      My <span>Knowledge</span>
+    </h1>
+  
+    <div class="box-container">
+      <div class="box" *ngFor="let skill of skills">
+        <i [class]="skill.icon"></i>
+        <h3>{{ skill.title }}</h3>
+        <p>{{ skill.description }}</p>
+      </div>
+    </div>
+  </section>
+  

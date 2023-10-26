@@ -1,0 +1,13 @@
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>A</span>hmet <span>Y</span>ilmaz.</a>
+        <nav class="navbar" [ngClass]="{'active': isNavbarActive}">
+            <a href="#home">home</a>
+            <a href="#service">skills</a>
+            <a href="#about">about</a>
+            <a href="#gallery">projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div id="menu-bar" class="fas fa-bars" (click)="toggleMenu()"></div>
+    </header>
+</body>
