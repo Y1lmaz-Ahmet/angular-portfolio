@@ -30,6 +30,7 @@
 	transition: 0.2s linear;
 }
 
+
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
@@ -141,6 +142,7 @@ body {
 }
 
 /* service */
+
 .heading {
 	text-align: center;
 	color: var(--default-color);
@@ -155,6 +157,32 @@ body {
 	text-transform: uppercase;
 }
 
+.service-option-container {
+	background: #333;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.service-option-container::content {
+	text-align: center;
+}
+
+.service-option-container label {
+	color: var(--default-color);
+	font-size: 1.8rem
+}
+
+.service-option-select-container {
+	/* background:#333;
+	color: var(--default-color); */
+	padding: 9px;
+	text-align: center;
+	font-weight: 600;
+}
+
 .service .box-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -163,14 +191,33 @@ body {
 
 .service .box-container .box {
 	border-radius: 0.5rem;
-	background-color: #333;
+	/* background-color: #333; */
 	text-align: center;
 	padding: 2.5rem;
+	opacity: 1;
+	/* Voeg hier een standaardwaarde voor opacity toe */
+	transition:  0.3s;
+	cursor: pointer;
+}
+.service .box-container .box:hover {
+	
+	box-shadow:0px 2px 9px var(--theme-color);
+	transform: scale(1.1);
+}
+
+.service .box-container .box:nth-child(even) {
+	background-color: #333;
+	/* Achtergrondkleur voor even technologieën */
+}
+
+.service .box-container .box:nth-child(odd) {
+	background-color: #11111145;
+	/* Achtergrondkleur voor oneven technologieën */
 }
 
 .service .box-container .box i {
-color: var(--default-color);
-font-size: 2.4rem;
+	color: var(--default-color);
+	font-size: 2.4rem;
 }
 
 .service .box-container .box div {
@@ -496,67 +543,67 @@ textarea:focus {
 
 /* theme toggler */
 
-	.theme-toggler{
+.theme-toggler {
 	position: fixed;
-	right:  -370px;
+	right: -370px;
 	top: 8%;
 	background: #333;
-	}
-	
-  
-  .theme-toggler.active {
+}
+
+
+.theme-toggler.active {
 	right: 0px;
 	background-color: #333;
-  }
-  
-  .theme-toggler h3 {
+}
+
+.theme-toggler h3 {
 	color: var(--default-color);
 	padding: 1rem 0;
-  }
-  
-  .theme-toggler .buttons {
+}
+
+.theme-toggler .buttons {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 1rem;
 	padding: 1rem;
-  }
-  
-  .theme-toggler .buttons .theme-btn {
+}
+
+.theme-toggler .buttons .theme-btn {
 	height: 5rem;
 	width: 5rem;
 	border-radius: 50%;
 	cursor: pointer;
-  }
-  
-  .theme-toggler .toggle-btn {
+}
+
+.theme-toggler .toggle-btn {
 	position: absolute;
 	top: 0;
 	left: -5.9rem;
 	padding: 1.3rem 1.5rem;
 	background: #333;
 	cursor: pointer;
-  }
-  
-  .theme-toggler .toggle-btn i {
+}
+
+.theme-toggler .toggle-btn i {
 	color: var(--default-color);
 	font-size: 3rem;
 	animation: rotate 4s linear infinite;
-  }
-  
-  .theme-toggler .toggle-btn i:hover {
+}
+
+.theme-toggler .toggle-btn i:hover {
 	color: #c4d3e2;
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
 	0% {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
-  
+
 	100% {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
+}
 
 @media (max-width:991px) {
 	html {

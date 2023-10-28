@@ -1,14 +1,25 @@
 <section class="service" id="service">
-    <h1 class="heading">
-      My <span>Knowledge</span>
-    </h1>
-  
-    <div class="box-container">
-      <div class="box" *ngFor="let skill of skills">
-        <i [class]="skill.icon"></i>
-        <h3>{{ skill.title }}</h3>
-        <p>{{ skill.description }}</p>
-      </div>
+  <h1 class="heading">
+    My <span>Knowledge</span>
+  </h1>
+
+  <div class="service-option-container">
+    <label class="category-option" for="category">Choose a category:</label>
+    <select class="service-option-select-container" id="category" [(ngModel)]="selectedCategory">
+      <option value="All Categories">All Categories</option>
+      <option value="Front-end frameworks">Front-end frameworks</option>
+      <option value="Back-end frameworks">Back-end frameworks</option>
+      <option value="Data management">data management</option>
+      <option value="Version control">version control</option>
+      <option value="Web development">Web development</option>
+    </select>
+  </div>
+
+  <div class="box-container">
+    <div class="box" *ngFor="let skill of skills" [style.display]="isInSelectedCategory(skill) ? 'block' : 'none'">
+      <i [class]="skill.icon"></i>
+      <h3>{{ skill.title }}</h3>
+      <p>{{ skill.description }}</p>
     </div>
-  </section>
-  
+  </div>
+</section>
