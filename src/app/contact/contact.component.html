@@ -1,17 +1,13 @@
 <section class="contact" id="contact">
     <h1 class="heading">contact <span>me</span></h1>
 
-    <form action="#">
+    <form [formGroup]="emailForm">
         <div class="inputBox">
-            <input type="text" placeholder="name">
-            <input type="email" placeholder="email">
+            <input type="text" placeholder="name" #name>
+            <input type="email" placeholder="email" #email>
         </div>
 
-        <div class="inputBox">
-            <input type="tel" placeholder="phone">
-            <input type="text" placeholder="subject">
-        </div>
-        <textarea name id cols="30" rows="10" placeholder="message"></textarea>
-        <input type="submit" class="btn" value="send message">
+        <textarea name id cols="30" rows="10" placeholder="message" #message></textarea>
+        <input type="submit" class="btn" value="send message" (click)="sendEmail(name.value, email.value, message.value)">
     </form>
 </section>
