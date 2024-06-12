@@ -1,16 +1,24 @@
 <section class="gallery" id="gallery">
-    <div class="heading">My <span>Projects</span></div>
+  <div class="heading">My <span>Projects</span></div>
 
-    <div class="box-container">
-        <div class="box" *ngFor="let item of galleryItems">
-          <img [src]="item.imageSrc" alt="">
-          <h3 class="title">{{ item.title }}</h3>
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a [href]="item.githubLink" title="github" target="_blank" class="fas fa-share"></a>
-            <a [href]="item.livePreviewLink" title="live preview" target="_blank" class="fas fa-eye"></a>
-          </div>
-        </div>
+  <div class="box-container">
+    <div class="box" *ngFor="let item of galleryItems">
+      <img [src]="item.imageSrc" alt="" />
+      <h3 class="title">{{ item.title }}</h3>
+      <div class="icons">
+        <a
+          [href]="item.githubLink"
+          title="github"
+          target="_blank"
+          class="fas fa-share"
+        ></a>
+        <a
+          [href]="item.livePreviewLink"
+          title="live preview"
+          target="_blank"
+          class="fas fa-eye"
+        ></a>
       </div>
-      
+    </div>
+  </div>
 </section>

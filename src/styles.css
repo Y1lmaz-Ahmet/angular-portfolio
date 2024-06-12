@@ -196,12 +196,13 @@ body {
 	padding: 2.5rem;
 	opacity: 1;
 	/* Voeg hier een standaardwaarde voor opacity toe */
-	transition:  0.3s;
+	transition: 0.3s;
 	cursor: pointer;
 }
+
 .service .box-container .box:hover {
-	
-	box-shadow:0px 2px 9px var(--theme-color);
+
+	box-shadow: 0px 2px 9px var(--theme-color);
 	transform: scale(1.1);
 }
 
@@ -326,6 +327,8 @@ body {
 	position: absolute;
 	left: 0;
 	right: 0;
+	display: flex;
+	justify-content: space-between;
 	bottom: -10rem;
 	background: #333;
 	padding-top: 1rem;

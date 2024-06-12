@@ -8,11 +8,23 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
 
   galleryItems = [
+  {
+      imageSrc: '../../assets/chat-app.png', 
+      title: 'react chat app',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/react-firebase-chat-chatssnovvax',
+      livePreviewLink: 'https://react-firebase-chat-chatssnovvax.vercel.app/',
+    },
     {
       imageSrc: '../../assets/fintrackr.jpg', 
       title: 'Data Analytics website UI',
       githubLink: 'https://github.com/Y1lmaz-Ahmet/FinTrackr',
       livePreviewLink: 'https://vermillion-lolly-636951.netlify.app/',
+    },
+    {
+      imageSrc: '../../assets/todo-app.png', 
+      title: 'todo app',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/simple-todo-app',
+      livePreviewLink: 'https://todo-app-sable-psi.vercel.app/',
     },
     {
       imageSrc: '../../assets/furniture.jpg', 
