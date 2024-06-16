@@ -9,6 +9,12 @@ export class GalleryComponent {
 
   galleryItems = [
   {
+      imageSrc: '../../assets/apple-app.png', 
+      title: 'Apple Website',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/apple_website',
+      livePreviewLink: 'https://apple-website-nine-tau.vercel.app/',
+    },
+  {
       imageSrc: '../../assets/chat-app.png', 
       title: 'react chat app',
       githubLink: 'https://github.com/Y1lmaz-Ahmet/react-firebase-chat-chatssnovvax',
