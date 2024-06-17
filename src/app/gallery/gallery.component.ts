@@ -9,16 +9,16 @@ export class GalleryComponent {
 
   galleryItems = [
   {
+      imageSrc: '../../assets/travelAria.png', 
+      title: 'Travel App UI',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/TravelAria-travel-website_UI',
+      livePreviewLink: 'https://travel-aria-travel-website-ui.vercel.app/',
+    },
+  {
       imageSrc: '../../assets/apple-app.png', 
       title: 'Apple Website',
       githubLink: 'https://github.com/Y1lmaz-Ahmet/apple_website',
       livePreviewLink: 'https://apple-website-nine-tau.vercel.app/',
-    },
-  {
-      imageSrc: '../../assets/chat-app.png', 
-      title: 'react chat app',
-      githubLink: 'https://github.com/Y1lmaz-Ahmet/react-firebase-chat-chatssnovvax',
-      livePreviewLink: 'https://react-firebase-chat-chatssnovvax.vercel.app/',
     },
     {
       imageSrc: '../../assets/fintrackr.jpg', 
@@ -27,10 +27,10 @@ export class GalleryComponent {
       livePreviewLink: 'https://vermillion-lolly-636951.netlify.app/',
     },
     {
-      imageSrc: '../../assets/todo-app.png', 
-      title: 'todo app',
-      githubLink: 'https://github.com/Y1lmaz-Ahmet/simple-todo-app',
-      livePreviewLink: 'https://todo-app-sable-psi.vercel.app/',
+      imageSrc: '../../assets/restaurant.jpg', 
+      title: 'Restaurant website UI',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/website-design/tree/main/website-design-16',
+      livePreviewLink: 'https://y1lmaz-ahmet-restaurant-website.vercel.app',
     },
     {
       imageSrc: '../../assets/furniture.jpg', 
@@ -39,16 +39,10 @@ export class GalleryComponent {
       livePreviewLink: 'https://website-design-7kge.vercel.app/',
     },
     {
-      imageSrc: '../../assets/restaurant.jpg', 
-      title: 'Restaurant website UI',
-      githubLink: 'https://github.com/Y1lmaz-Ahmet/website-design/tree/main/website-design-16',
-      livePreviewLink: 'https://y1lmaz-ahmet-restaurant-website.vercel.app',
-    },
-    {
-      imageSrc: '../../assets/snapmaster.png',
-      title: 'Website Design',
-      githubLink: 'https://github.com/Y1lmaz-Ahmet/snapmaster',
-      livePreviewLink: 'https://snapmaster.vercel.app',
+      imageSrc: '../../assets/travel-agency.jpg', 
+      title: 'Travel Agency website UI',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/website-design/tree/main/website-design-14',
+      livePreviewLink: 'https://website-design-ruby.vercel.app/',
     },
     {
       imageSrc: '../../assets/coffee-shop.jpg', 
@@ -57,10 +51,10 @@ export class GalleryComponent {
       livePreviewLink: 'https://portfolio-project-coffee-shop.vercel.app',
     },
     {
-      imageSrc: '../../assets/travel-agency.jpg', 
-      title: 'Travel Agency website UI',
-      githubLink: 'https://github.com/Y1lmaz-Ahmet/website-design/tree/main/website-design-14',
-      livePreviewLink: 'https://website-design-ruby.vercel.app/',
+      imageSrc: '../../assets/snapmaster.png',
+      title: 'Website Design',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/snapmaster',
+      livePreviewLink: 'https://snapmaster.vercel.app',
     },
     {
       imageSrc: '../../assets/nexa.jpg', 
@@ -68,6 +62,19 @@ export class GalleryComponent {
       githubLink: 'https://github.com/Y1lmaz-Ahmet/nexa',
       livePreviewLink: 'https://wondrous-macaron-acf1a4.netlify.app/',
     },
+  {
+      imageSrc: '../../assets/chat-app.png', 
+      title: 'react chat app',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/react-firebase-chat-chatssnovvax',
+      livePreviewLink: 'https://react-firebase-chat-chatssnovvax.vercel.app/',
+    },
+    {
+      imageSrc: '../../assets/todo-app.png', 
+      title: 'todo app',
+      githubLink: 'https://github.com/Y1lmaz-Ahmet/simple-todo-app',
+      livePreviewLink: 'https://todo-app-sable-psi.vercel.app/',
+    },
+    
     {
       imageSrc: '../../assets/dashboard.jpg', 
       title: 'Modern Dashboard UI',
