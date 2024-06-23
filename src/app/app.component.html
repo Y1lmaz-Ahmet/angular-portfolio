@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- font awesome -->
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-		<!-- font awesome -->
-		<title>{{title}}</title>
-	</head>
-<body>
-    <app-navbar></app-navbar>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- font awesome -->
+    <title>{{ title }}</title>
+  </head>
+  <style>
+    button {
+      padding: 19px 25px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 9px;
+      cursor: pointer;
+    }
+    a {
+      color: black;
+    }
+    h1 {
+      font-size: 3rem;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>Nieuwe portfolio website beschikbaar, klik op de knop.</h1>
+    <button>
+      <a href="https://y1lmaz-ahmet.vercel.app/"
+        >Link naar nieuwe portfolio website</a
+      >
+    </button>
+    <!-- <app-navbar></app-navbar>
     <app-home></app-home>
     <app-service></app-service>
     <app-about></app-about>
     <app-gallery></app-gallery>
     <app-contact></app-contact>
     <footer></footer>
-    <app-theme-toggler></app-theme-toggler>
-</body>
+    <app-theme-toggler></app-theme-toggler> -->
+  </body>
 </html>
